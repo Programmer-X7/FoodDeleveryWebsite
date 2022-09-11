@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyOnlineMeal.com</title>
+    <link rel="stylesheet" href="css/styling.css">
+    <link rel="stylesheet" media="Screen and (max-width: 1322px)" href="css/phone.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div id="logo">
+                <a href="https://Zomato.com/">
+                    <img src="img/main_logo.png" alt="MyOnlineMeal">
+                </a>
+            </div>
+            <div>
+                <ul>
+                    <li class="nav-items"><a href="#home" class="active">Home</a></li>
+                    <li class="nav-items"><a href="#services-container">Services</a></li>
+                    <li class="nav-items"><a href="#client-section">Clients</a></li>
+                    <li class="nav-items"><a href="#contact">Contect</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="home">
+        <h2 class="h-primary">Welcome to MyOnlineMeal</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae tenetur ut animi architecto provident minima
+            iure accusamus Lorem ipsumquam? Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Odio, tenetur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, odio?
+        </p>
+        <p>Lorem ipsum dolor sit amet consec Deleniti illum enim. Lorem.</p>
+        <button class="btn">Order Now</button>
+    </section>
+
+    <section id="services-container">
+        <h2 class="h-primary center">Our Services</h2>
+        <div id="services">
+            <div class="box">
+                <img src="img/food-ordering-img.png" alt="MyOnlineMeal">
+                <h3 class="h-secondary center">Food Ordering</h3>
+                <p class="center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, numquam
+                    perspiciatis! Neque voluptates nesciunt itaque voluptate nulla cumque</p>
+            </div>
+
+            <div class="box">
+                <img src="img/food catring img.jpg" alt="MyOnlineMeal">
+                <h3 class="h-secondary center">Food Catering</h3>
+                <p class="center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, numquam
+                    perspiciatis! Neque voluptates nesciunt itaque voluptate nulla cumque</p>
+            </div>
+
+            <div class="box">
+                <img src="img/delivery img.jpg" alt="MyOnlineMeal">
+                <h3 class="h-secondary center">Food Delivery</h3>
+                <p class="center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, numquam
+                    perspiciatis! Neque voluptates nesciunt itaque voluptate nulla cumque</p>
+            </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="client">
+            <div class="client-item">
+                <img src="/img/Zomato_logo.png" alt="Zomato">
+            </div>
+            <div class="client-item">
+                <img src="/img/burger-king logo.png" alt="Burger-king">
+            </div>
+            <div class="client-item">
+                <img src="/img/swiggy logo.png" alt="Swiggy">
+            </div>
+            <div class="client-item" style="padding: 34px 0px;">
+                <img src="/img/dominos logo.png" alt="Dominos">
+            </div>
+            <div class="client-item">
+                <img src="/img/kfc logo.png" alt="KFC">
+            </div>
+            <div class="client-item">
+                <img src="/img/TRP-logo.jpg" alt="TRP">
+            </div>
+            <div class="client-item">
+                <img src="/img/harveys logo.png" alt="Harveys">
+            </div>
+            <div class="client-item">
+                <img src="/img/pH logo.png" alt="Pizza-Hut">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name : </label>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email : </label>
+                    <input type="email" name="email" id="name" placeholder="Enter Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="mobile-no">Mobile No : </label>
+                    <input type="number" name="mobile-no" id="mobile-no" placeholder="Enter Your Mobile Number">
+                </div>
+                <div class="form-group">
+                    <label for="address">Address : </label>
+                    <input type="text" name="address" id="address" placeholder="Enter Your address">
+                </div>
+                <div class="form-group">
+                    <label for="massage">Massage :</label>
+                    <textarea name="massage" id="massage" cols="30" rows="10" placeholder="Write Here!"></textarea>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="submit">
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy; www.MyOnlineMeal.com All rights reserved!
+        </div>
+    </footer>
+
+    <!-- <script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script> -->
+</body>
+
+</html>
